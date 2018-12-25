@@ -4,12 +4,6 @@ class SearchBar extends Component {
 
   state = { term: '' };
 
-  // onFormSubmit(event) {
-  //   event.preventDefault();
-
-  //   console.log(this.state.term);
-  // }
-
   onFormSubmit = (event) => {
     event.preventDefault();
 
@@ -22,7 +16,7 @@ class SearchBar extends Component {
         <form className="ui form" onSubmit={this.onFormSubmit}>
           <div className="field">
             <label>image search</label>
-            <input type="text" placeholder="asdf" value={this.state.term} onChange={(e) => this.setState({term: e.target.value})} />
+            <input type="text" placeholder="Search" value={this.state.term} onChange={(e) => this.setState({term: e.target.value})} />
           </div>
         </form>
       </div>

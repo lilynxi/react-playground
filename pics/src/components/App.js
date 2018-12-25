@@ -17,7 +17,7 @@ class App extends Component {
 
     this.setState({ images: response.data.results });
 
-    console.log(response.data.results.length);
+    //console.log(response.data.results[0].urls.small);
     // .then((response) => {
     //   console.log(response.data.results.length);
     // });
@@ -27,8 +27,7 @@ class App extends Component {
     return (
       <div className="ui container" style={{marginTop: '1rem'}}>
         <SearchBar onSubmitTerm={this.onSearchSubmit} />
-        <ImageList/>
-        {this.state.images.length}
+        <ImageList images={this.state.images}/>
       </div>
     );
   }
