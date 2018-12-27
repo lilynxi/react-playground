@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageCard from './ImageCard';
 import './ImageList.css';
 
 
@@ -6,9 +7,7 @@ const renderBody = (props) => {
   return props.images.length > 0 ? (
     <div className="masonry">
       {props.images.map(image => (
-        <div className="item" key={image.id}>
-          <img alt={image.description} src={image.urls.small} />
-        </div>
+        <ImageCard image={image} key={image.id} />
       ))}
     </div>
   ) : (

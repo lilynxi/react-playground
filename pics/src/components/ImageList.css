@@ -2,14 +2,3 @@
   column-count: 4;
   column-gap: .5rem;
 }
-
-.item { /* Masonry bricks or child elements */
-  background-color: #eee;
-  display: inline-block;
-  margin: 0 0 .5rem;
-  width: 100%;
-}
-
-.item img {
-  max-width: 100%;
-}
