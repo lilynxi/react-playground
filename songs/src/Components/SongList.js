@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux'; ///
 import { selectSong } from '../Actions';
-import { dispatch } from 'rxjs/internal/observable/pairs';
 
 class SongList extends Component {
   renderList = () => {
@@ -15,14 +14,7 @@ class SongList extends Component {
     })
   }
 
-  // onClick = (e,song) => {
-  //   console.log("asdf");
-  //   //dispatch(selectSong);
-  //   this.props.selectSong(song)
-  // }
-
   render(){
-    //console.log(this.props);
     return (
       <div>{this.renderList()}</div>
     );
