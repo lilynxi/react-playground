@@ -1,0 +1,9 @@
+body {
+  font-family: sans-serif;
+}
+
+.app {
+  background: yellow;
+  padding: 20px 40px;
+  display: inline-block;
+}
